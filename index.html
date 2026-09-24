@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17050d">
+<meta name="description" content="A private little world made with love. ❤️">
+<title>Our Little Universe ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="background-glow"></div><div id="stars"></div><div id="petals"></div><div id="floating-hearts"></div>
+<audio id="bgMusic" loop preload="none"><source src="assets/music/romantic.mp3" type="audio/mpeg"></audio>
+<button class="music-control" id="musicControl" aria-label="Music control">🎵</button>
+
+<section id="opening" class="opening-screen">
+  <div class="opening-content">
+    <div class="opening-heart">❤️</div>
+    <p class="eyebrow">A little surprise for you</p>
+    <h1>Hey <span id="openingName">My Love</span> ❤️</h1>
+    <p class="opening-subtitle">Someone made something special just for you... ✨</p>
+    <button id="openSurprise" class="luxury-button">Open Your Surprise 💝</button>
+    <p class="tiny-note">Take your time... there's a whole little universe waiting for you.</p>
+  </div>
+</section>
+
+<main id="mainSite" class="hidden">
+<nav class="floating-nav">
+  <a href="#home">❤️ <span>Home</span></a><a href="#story">📖 <span>Story</span></a><a href="#letters">💌 <span>Letters</span></a>
+  <a href="#memories">📸 <span>Memories</span></a><a href="#reasons">🌹 <span>Reasons</span></a><a href="#future">✨ <span>Future</span></a><a href="#final">💝 <span>Surprise</span></a>
+</nav>
+
+<section id="home" class="section hero">
+  <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+  <div class="hero-content">
+    <p class="eyebrow">For the most special person</p>
+    <h2>My world became <span>more beautiful</span> when you entered it. ❤️</h2>
+    <p class="hero-text">This isn't just a website. It's a tiny universe made from memories, feelings, dreams, and all the little things I wish I could put into words.</p>
+    <div class="hero-signature">With love,<br><span id="heroName">Me ❤️</span></div>
+    <div class="scroll-hint"><span>Scroll slowly</span><div class="scroll-line"></div></div>
+  </div>
+</section>
+
+<section class="section love-section">
+  <div class="section-heading reveal"><p class="eyebrow">Chapter One</p><h2>To the Most Special Person <span>in My Life ❤️</span></h2><div class="heading-heart">♡</div></div>
+  <div class="love-introduction reveal">
+    <p>There are some people who simply enter your life, and then there are people who quietly become a beautiful part of your heart.</p>
+    <p>You are one of those rare people for me. Your presence has a way of making ordinary moments feel extraordinary, and somehow even the smallest memories become precious when they have you in them.</p>
+    <p>I am grateful for every conversation, every laugh, every little moment, and every memory we've created. More than anything, I am grateful that our paths crossed.</p>
+  </div>
+  <div class="floating-phrases"><span>You're my happiness ❤️</span><span>You're my favorite person 🌹</span><span>You make my world beautiful ✨</span><span>My heart chooses you, every single day 💕</span></div>
+</section>
+
+<section id="story" class="section story-section">
+  <div class="section-heading reveal"><p class="eyebrow">Chapter Two</p><h2>Our Love <span>Story 📖❤️</span></h2><p>Some stories are written with ink. Ours is written with moments.</p></div>
+  <div id="timeline" class="timeline"></div>
+</section>
+
+<section id="reasons" class="section reasons-section">
+  <div class="section-heading reveal"><p class="eyebrow">Chapter Three</p><h2>Reasons I <span>Love You 💌</span></h2><p>Honestly... I could probably write a thousand.</p></div>
+  <div id="reasonsGrid" class="reasons-grid"></div>
+</section>
+
+<section id="letters" class="section letters-section">
+  <div class="section-heading reveal"><p class="eyebrow">Chapter Four</p><h2>Love <span>Letters 💌🌹</span></h2><p>Letters I couldn't always say out loud.</p></div>
+  <div id="lettersGrid" class="letters-grid"></div>
+</section>
+
+<div id="letterModal" class="modal"><div class="letter-modal-content"><button class="close-modal" id="closeLetter">×</button><div class="opened-envelope">💌</div><p class="letter-date" id="modalLetterTitle"></p><div id="modalLetterText" class="modal-letter-text"></div><button class="luxury-button small" id="closeLetterButton">Close Letter ❤️</button></div></div>
+
+<section class="section heart-letter-section">
+  <div class="heart-letter"><p class="eyebrow">Chapter Five</p><h2>A Letter From <span>My Heart ❤️</span></h2><div id="heartLetterText" class="typewriter-letter"></div></div>
+</section>
+
+<section id="memories" class="section memories-section">
+  <div class="section-heading reveal"><p class="eyebrow">Chapter Six</p><h2>Our <span>Memories 📸</span></h2><p>Little moments that became big pieces of my heart.</p></div>
+  <div id="gallery" class="memory-gallery"></div>
+</section>
+
+<div id="photoModal" class="photo-modal"><button id="closePhoto" class="close-modal">×</button><img id="modalPhoto" src="" alt="Our memory"><p id="modalCaption"></p></div>
+
+<section class="section bucket-section">
+  <div class="section-heading reveal"><p class="eyebrow">Chapter Seven</p><h2>Things I Want <span>To Do With You 🌎❤️</span></h2></div>
+  <div id="bucketGrid" class="bucket-grid"></div>
+</section>
+
+<section id="future" class="section future-section">
+  <div class="future-content"><p class="eyebrow">Chapter Eight</p><h2>Our Story Isn't <span>Ending Here... ❤️</span></h2>
+    <div class="future-path"><div class="future-node">More adventures 🌎</div><div class="future-node">More laughter 😂❤️</div><div class="future-node">More memories 📸</div><div class="future-node">More sunsets 🌅</div><div class="future-node">More celebrations 🎉</div><div class="future-node">More love ❤️</div><div class="future-node">More us. ♾️</div></div>
+    <p class="future-ending">Because my favorite place will always be wherever you are. ❤️</p>
+  </div>
+</section>
+
+<section class="section compliment-section">
+  <div class="compliment-box"><p class="eyebrow">A Little Something</p><h2>Tell Me Something <span>Sweet ❤️</span></h2><div id="compliment" class="compliment-text">Click the button...</div><button id="complimentButton" class="luxury-button">Tell Me Something Sweet ❤️</button></div>
+</section>
+
+<section class="section infinite-heart-section">
+  <div class="infinite-content"><p class="eyebrow">Chapter Ten</p><h2>Leave A Little <span>Love ❤️</span></h2><p>Tap anywhere...</p><div class="big-heart">❤️</div></div>
+</section>
+
+<section id="final" class="section final-section">
+  <div class="final-before"><p class="eyebrow">One Last Thing...</p><h2>Wait... <span>There's One More Thing ❤️</span></h2><button id="finalButton" class="luxury-button">Open My Final Message 💝</button></div>
+  <div id="finalReveal" class="final-reveal"><div id="finalStars"></div><div class="giant-heart">❤️</div><div id="finalMessage" class="final-message"></div>
+    <div class="final-ending"><p>THE END...?</p><strong>No.</strong><span>Just another beginning. ♾️❤️</span></div><div class="final-love">I Love You ❤️</div>
+  </div>
+</section>
+
+<footer><div class="footer-heart">❤️</div><p>Made with love, memories & a little bit of magic.</p><p>© <span id="year"></span></p></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
